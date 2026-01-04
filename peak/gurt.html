@@ -1,5 +1,6 @@
 
 <button onclick="talk()">Start</button>
+<h1 id="breh">Words Left: 203</h1>
 <h3 id="gurt">Log: </h3>
 <script>
 var log="Log: ";
@@ -7,11 +8,12 @@ var bub=["Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "
 async function talk(){for(var c=0;c<bub.length;c++){var spe=new SpeechSynthesisUtterance();
 spe.text = bub[c];
 spe.volume = 1;
-spe.rate = 1.5;
+spe.rate = 3.5;
 spe.pitch = 1;
 window.speechSynthesis.speak(spe);
-await sleep(1000)
+await sleep(250)
 log = log + bub[c];
 document.getElementById("gurt").innerHTML = log;
+document.getElementById("breh").innerHTML = 203-c;
 function sleep(ms) {return new Promise(resolve => setTimeout(resolve, ms));}
 }}</script>
