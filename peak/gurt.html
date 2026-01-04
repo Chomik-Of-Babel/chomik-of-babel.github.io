@@ -10,7 +10,7 @@ spe.volume = 1;
 spe.rate = 1.5;
 spe.pitch = 1;
 window.speechSynthesis.speak(spe);
-await sleep(2000)
+await sleep(1000)
 log = log + bub[c];
 document.getElementById("gurt").innerHTML = log;
 function sleep(ms) {return new Promise(resolve => setTimeout(resolve, ms));}
