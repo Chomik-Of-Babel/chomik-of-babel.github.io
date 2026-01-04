@@ -1,7 +1,7 @@
 
 <button onclick="talk()">Start</button>
 <h1 id="breh">Words Left: 203</h1>
-<h3 id="gurt">Log: </h3>
+<h2 id="gurt">Log: </h2>
 <script>
 var log="Log: ";
 var bub=["Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub! ", "Blub? ", "Blub. ", "Blub? ", "Blub. ", "Blub. ", "Blub. ", "Blub? ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub? ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub? ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub? ", "Blub. ", "Blub? ", "Blub. ", "Blub? ", "Blub. ", "Blub? ", "Blub. ", "Blub! ", "Blub! ", "Blub? ", "Blub! ", "Blub. ", "Blub? ", "Blub. ", "Blub? ", "Blub. ", "Blub? ", "Blub. ", "Blub? ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub! ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub! ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub! ", "Blub. ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub. ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub! ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub! ", "Blub."];
@@ -14,6 +14,6 @@ window.speechSynthesis.speak(spe);
 await sleep(500)
 log = log + bub[c];
 document.getElementById("gurt").innerHTML = log;
-document.getElementById("breh").innerHTML = "Words Left: "+203-c;
+document.getElementById("breh").innerHTML = "Words Left: "+(203-c)+"";
 function sleep(ms) {return new Promise(resolve => setTimeout(resolve, ms));}
 }}</script>
