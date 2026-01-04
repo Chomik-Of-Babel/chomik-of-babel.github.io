@@ -7,10 +7,10 @@ var bub=["Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "Blub. ", "
 async function talk(){for(var c=0;c<bub.length;c++){var spe=new SpeechSynthesisUtterance();
 spe.text = bub[c];
 spe.volume = 1;
-spe.rate = 1;
+spe.rate = 1.5;
 spe.pitch = 1;
 window.speechSynthesis.speak(spe);
-await sleep(500)
+await sleep(2000)
 log = log + bub[c];
 document.getElementById("gurt").innerHTML = log;
 function sleep(ms) {return new Promise(resolve => setTimeout(resolve, ms));}
